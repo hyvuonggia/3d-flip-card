@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d4a373;
+    background-color: #faedcd;
 }
 
 .container {
@@ -24,11 +24,12 @@ body {
 
 .card {
     position: relative;
-    width: 450px;
-    height: 400px;
+    width: 480px;
+    height: 480px;
     transform-style: preserve-3d;
-    transition: 1s ease-in-out;
-    transform: perspective(500px) rotateY(0deg);
+    transition: 0.5s ease-in-out;
+    /* transform: perspective(1000px) rotateY(0deg); */
+    margin: 50px;
 }
 
 .front, .back {
@@ -36,8 +37,8 @@ body {
     position: absolute;
     /* top: 0;
     left: 0; */
-    width: 450px;
-    height: 400px;
+    width: 95%;
+    height: 95%;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -48,6 +49,7 @@ body {
 
 .front{
     background-size: cover; 
+    background-position: center;
 }
 
 #card1Front {
@@ -56,11 +58,11 @@ body {
 
 .back {
     background: #ccd5ae;
-    transform: perspective(500px) rotateY(180deg);
+    transform: perspective(400px) rotateY(180deg);
 }
 
 .card:hover {
-    transform: perspective(500px) rotateY(180deg);
+    transform:  rotateY(180deg);
 }
 /* .card {
     transform: perspective(500px) rotateY(180deg);
@@ -68,9 +70,9 @@ body {
 
 
 .inner {
-    transform: perspective(500px) translateZ(80px);
-    width: 380px;
-    height: 400px;
+    transform: perspective(400px) translateZ(100px);
+    width: 400px;
+    height: 440px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -99,12 +101,17 @@ img {
     margin: auto;
 }
 
+td{
+    padding: 4px;
+}
+
 td:first-child{
     font-weight: bold;
 }
 
 .specs {
     width: 90%;
+    overflow-y: scroll;
 }
 
 table{
@@ -116,3 +123,14 @@ tr:nth-child(2n){
     background-color: #fefae0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #e9edc9; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #d4a373; 
+  }
