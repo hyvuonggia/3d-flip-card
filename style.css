@@ -24,11 +24,11 @@ body {
 
 .card {
     position: relative;
-    width: 480px;
-    height: 480px;
+    width: 500px;
+    height: 500px;
     transform-style: preserve-3d;
     transition: 0.5s ease-in-out;
-    /* transform: perspective(1000px) rotateY(0deg); */
+    transform: perspective(1000px) rotateY(0deg);
     margin: 50px;
 }
 
@@ -37,8 +37,8 @@ body {
     position: absolute;
     /* top: 0;
     left: 0; */
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -58,21 +58,18 @@ body {
 
 .back {
     background: #ccd5ae;
-    transform: perspective(400px) rotateY(180deg);
+    transform: perspective(1000px) rotateY(180deg);
 }
 
 .card:hover {
-    transform:  rotateY(180deg);
+    transform: perspective(1000px)  rotateY(180deg);
 }
-/* .card {
-    transform: perspective(500px) rotateY(180deg);
-} */
 
 
 .inner {
-    transform: perspective(400px) translateZ(100px);
-    width: 400px;
-    height: 440px;
+    transform: perspective(1000px) translateZ(100px);
+    width: 87%;
+    height: 87%;
     justify-content: center;
     align-items: center;
     display: flex;
