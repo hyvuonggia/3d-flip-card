@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #faedcd;
+    background-color: #14213d;
 }
 
 .container {
@@ -52,12 +52,9 @@ body {
     background-position: center;
 }
 
-#card1Front {
-    background-image: url("./images/office.jpg");   
-}
 
 .back {
-    background: #ccd5ae;
+    background: #e5e5e5;
     transform: perspective(1000px) rotateY(180deg);
 }
 
@@ -84,7 +81,7 @@ body {
 
 h1{
     text-align: center;
-    color: #e9edc9;
+    color: #fff;
     text-shadow: 3px 3px black;
 }
 
@@ -117,17 +114,23 @@ table{
 }
 
 tr:nth-child(2n){
-    background-color: #fefae0;
+    background-color: #ffffff;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
 
 ::-webkit-scrollbar-track {
-    background: #e9edc9; 
-  }
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+}
    
-  ::-webkit-scrollbar-thumb {
-    background: #d4a373; 
-  }
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
+  
