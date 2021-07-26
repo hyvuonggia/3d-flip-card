@@ -28,15 +28,13 @@ body {
     height: 600px;
     transform-style: preserve-3d;
     transition: 0.5s ease-in-out;
-    transform: perspective(1000px) rotateY(0deg);
-    margin: 30px;
+    transform: perspective(1000px) ;
+    margin: 20px;
 }
 
 .front, .back {
     /* border: 3px solid #e9edc9; */
     position: absolute;
-    /* top: 0;
-    left: 0; */
     width: 90%;
     height: 90%;
     transform-style: preserve-3d;
@@ -55,7 +53,7 @@ body {
 
 .back {
     background: #e5e5e5;
-    transform: perspective(1000px) rotateY(180deg);
+    transform:  rotateY(180deg);
 }
 
 .card:hover {
@@ -64,7 +62,7 @@ body {
 
 
 .inner {
-    transform: perspective(1000px) translateZ(100px);
+    transform:  translateZ(100px);
     width: 87%;
     height: 87%;
     justify-content: center;
@@ -83,10 +81,7 @@ h1{
     text-align: center;
     color: #fff;
     text-shadow: 3px 3px black;
-}
-
-h2 {
-    text-align: center;
+    font-size: 60px;
 }
 
 img {
@@ -94,7 +89,6 @@ img {
     height: auto;
     margin: auto;
 }
-
 
 td{
     padding: 4px;
@@ -172,7 +166,7 @@ img {
 a {
     background-color: #04AA6D;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     padding: 16px 32px;
     text-decoration: none;
     border-radius: 5%;
